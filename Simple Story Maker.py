@@ -19,6 +19,5 @@ def isMale():
         print("she was " + character_age + ".")
         print("She likes the name " + character_name + ", ")
         print("but didn't like being " + character_age + ".")
-    return
 isMale()
 time.sleep(10)
