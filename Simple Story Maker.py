@@ -7,7 +7,7 @@ print(Fore.RED + Back.WHITE + "What's your name?")
 character_name = input("Type it in here: ")
 
 print(Fore.RED + Back.WHITE + "How old are you?")
-character_age = input("Type your age in here here: ")
+character_age = int(input("Type your age in here here: "))
 
 print(Fore.RED + Back.WHITE + "Where are you from?")
 character_whereabouts = input("Type the country in here: ")
