@@ -1,20 +1,20 @@
 import time
 import colorama
 from colorama import Fore, Back, Style
-colorama.init()
+colorama.init(autoreset=True)
 
 print(Fore.RED + Back.WHITE + "What's your name?")
-character_name = input(Fore.RED + "Type it in here: ")
+character_name = input("Type it in here: ")
 
 print(Fore.RED + Back.WHITE + "How old are you?")
-character_age = input(Fore.RED + "Type your age in here here: ")
+character_age = input("Type your age in here here: ")
 
 print(Fore.RED + Back.WHITE + "Where are you from?")
-character_whereabouts = input(Fore.RED + "Type the country in here: ")
-
+character_whereabouts = input("Type the country in here: ")
 
 def isMale():
-    Male = input(Fore.RED + Back.WHITE + "You're a male? True or False?: ")
+    print(Fore.RED + Back.WHITE + "You're a male?")
+    Male = input("True or False?: ")
     if (Male == "True"):
         Male_Bool = True
     elif (Male == "False"):
@@ -34,8 +34,8 @@ def isMale():
 
 
 def likesCountry():
-    print("Do you like your country?")
-    likes = input(Fore.RED + Back.WHITE + "True or False?: ")
+    print(Back.WHITE + Fore.RED + "Do you like your country?")
+    likes = input("True or False?: ")
     if (likes == "True"):
         likes_Bool = True
     elif (likes == "False"):
@@ -44,6 +44,7 @@ def likesCountry():
         print(Fore.BLUE + "and likes the country.")
     elif (likes_Bool) == False:
         print(Fore.BLUE + "and doesn't like the country.")
+
 
 
 isMale()
