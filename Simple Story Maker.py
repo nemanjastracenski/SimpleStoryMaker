@@ -7,7 +7,7 @@ print(Fore.RED + Back.WHITE + "What's your name?")
 character_name = input("Type it in here: ")
 
 print(Fore.RED + Back.WHITE + "How old are you?")
-character_age = int(input("Type your age in here here: "))
+character_age = input("Type your age in here here: ")
 
 print(Fore.RED + Back.WHITE + "Where are you from?")
 character_whereabouts = input("Type the country in here: ")
@@ -15,9 +15,9 @@ character_whereabouts = input("Type the country in here: ")
 def isMale():
     print(Fore.RED + Back.WHITE + "You're a male?")
     Male = input("True or False?: ")
-    if (Male == "True"):
+    if (Male == "True" or "true"):
         Male_Bool = True
-    elif (Male == "False"):
+    elif (Male == "False" or "false"):
         Male_Bool = False
     if (Male_Bool) == True:
         print(Fore.BLUE + "There was a man named " + character_name + ", ")
@@ -36,9 +36,9 @@ def isMale():
 def likesCountry():
     print(Back.WHITE + Fore.RED + "Do you like your country?")
     likes = input("True or False?: ")
-    if (likes == "True"):
+    if (likes == "True" or "true"):
         likes_Bool = True
-    elif (likes == "False"):
+    elif (likes == "False" or "false"):
         likes_Bool = False
     if (likes_Bool) == True:
         print(Fore.BLUE + "and likes the country.")
@@ -52,3 +52,4 @@ isMale()
 likesCountry()
 
 time.sleep(10)
+
